@@ -1,0 +1,53 @@
+#rond_violet {
+  background-color: #f96d00;
+  width: 25vw;
+  border-radius: 50%;
+  scale: 0.7;
+  height: 25vw;
+  animation: scale_fond 15s infinite 1s;
+}
+#rond_vert {
+  background-color: #393e46;
+  width: 25vw;
+  right: 25px;
+  border-radius: 50%;
+  scale: 1.7;
+  height: 25vw;
+  z-index: 1;
+  animation: scale_fond 20s infinite;
+}
+#rond_blue {
+  background-color: #0092ca;
+  width: 25vw;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50% -50%);
+  border-radius: 50%;
+  height: 25vw;
+  animation: scale_fond 17.5s infinite 2s;
+}
+
+.abso {
+  position: absolute;
+}
+
+#fond {
+  position: absolute;
+  filter: blur(250px);
+  background-color: rgba(105, 105, 105, 0.178);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes scale_fond {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 3;
+  }
+  100% {
+    scale: 1;
+  }
+}
